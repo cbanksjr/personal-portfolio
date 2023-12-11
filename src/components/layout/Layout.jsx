@@ -8,7 +8,10 @@ import Footer from "../Footer";
 const Layout = () => {
   return (
     <div className="bg-gradient-to-r from-teal-200 to-teal-500">
-      <Nav />
+      <Nav
+          link1 = "https://www.linkedin.com/in/craig-banks-jr-7a9126106/"
+          link2 = "https://github.com/cbanksjr"
+         />
         <Profile 
           name = "Craig Banks Jr"
           occupation = "Full Stack Developer"
