@@ -9,7 +9,7 @@ const ReactList = () => {
     const reactListRepo = "https://github.com/cbanksjr/react-personlist";
 
     return (
-        <article className="p-20 lg:p-8 col-start-2 row-start-2 place-content-center">
+        <article className="p-12 lg:p-8 col-start-2 row-start-2 place-content-center">
         <div className="bg-white border border-gray-200 rounded-lg shadow-2xl shadow-gray-600 transition ease-in-out duration-300  hover:shadow-gray-900  dark:bg-neutral-50 dark:border-gray-700">
           <a href={reactListURL} target="_blank" rel="noreferrer">
             <img

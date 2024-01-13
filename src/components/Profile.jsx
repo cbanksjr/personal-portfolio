@@ -16,21 +16,21 @@ const Profile = ({ name, occupation, statement }) => {
     }, [myName.length]);
 
   return (
-    <section className="flex flex-col p-12 lg:grid grid-cols-[4fr 2fr] grid-rows-[4fr] items-center pt-8 pb-56 mt-20">
+    <section className="flex flex-col p-auto xl:grid grid-cols-[4fr 2fr] grid-rows-[4fr] items-center justify-center pt-8 pb-36 mt-20">
       <img
-        className="w-[475px] h-[575px] lg:col-start-2 rounded-[50%] shadow-2xl shadow-slate-900"
+        className="w-84 h-96 md:w-[475px] md:h-[525px] xl:w-[525px] xl:h-[575px] xl:ml-36 xl:col-start-2 rounded-[50%] shadow-2xl shadow-slate-900"
         src={imageSelf}
         alt={name}
       />
       <div className="pt-20 lg:flex flex-col items-center row-start-1 leading-normal">
-        <h1 className="text-xl text-center lg:text-5xl font-extrabold mb-10">
+        <h1 className="text-xl text-center lg:text-5xl 2xl:text-7xl font-extrabold mb-10">
           {occupation}
         </h1>
         <h2 className="xl:flex text-slate-50 font-semibold text-xl">
           <p className="text-center xl:p-6">
-            <span className="text-sm lg:text-xl font-normal">My name is </span>
-            <span className="lg:text-2xl">{name.substring(0, index)}</span>
-            <span className="text-sm lg:text-xl font-normal">
+            <span className="text-sm lg:text-xl 2xl:text-2xl font-normal">My name is </span>
+            <span className="lg:text-2xl 2xl:text-3xl">{name.substring(0, index)}</span>
+            <span className="text-sm lg:text-xl 2xl:text-2xl font-normal">
               <br />
               {statement}
             </span>
