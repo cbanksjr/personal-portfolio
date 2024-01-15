@@ -1,17 +1,12 @@
 /* eslint-disable react/no-unknown-property */
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHtml5 } from "@fortawesome/free-brands-svg-icons";
-import { faCss3 } from "@fortawesome/free-brands-svg-icons";
-import { faJs } from "@fortawesome/free-brands-svg-icons";
-import calculator from "../assets/Calculator1.png"
+import { faReact } from "@fortawesome/free-brands-svg-icons";
+import calculator from "../assets/react-calculator.png"
 
 const Calculator = () => {
-    const html = <FontAwesomeIcon icon={faHtml5} color="#dd4a25" size="2x" />;
-    const css = <FontAwesomeIcon icon={faCss3} color="#244bdd" size="2x"/>;
-    const js = <FontAwesomeIcon icon={faJs} color="#e8d44d" size="2x"/>;
-
-    const calculatorURL = "https://cbanksjr.github.io/finance-calculator/";
-    const calculatorRepo = "https://github.com/cbanksjr/finance-calculator";
+    const react = <FontAwesomeIcon icon={faReact} color="#03d1f6" size="2x" />;
+    const calculatorURL = "https://cbanksjr.github.io/react-finance-calculator/";
+    const calculatorRepo = "https://github.com/cbanksjr/react-finance-calculator";
 
     return (
         <article className="p-12 lg:p-8 flex col-start-3 row-start-2 place-content-center">
@@ -28,7 +23,7 @@ const Calculator = () => {
               Finance Calculator
             </h5>
             <p className="mb-3 font-normal text-gray-700 dark:text-gray-500">
-              {html}{css}{js}
+              {react}
             </p>
             <a
               href={calculatorRepo}
