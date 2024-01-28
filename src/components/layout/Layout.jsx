@@ -6,25 +6,14 @@ import Projects from "../Projects";
 import Footer from "../Footer";
 
 const Layout = () => {
-  const currentYear = new Date().getFullYear()
-  const copyright = String.fromCodePoint(169)
 
   return (
     <div className="bg-gradient-to-r from-teal-200 to-teal-500">
-      <Nav
-          link1 = "https://www.linkedin.com/in/craig-banks-jr-7a9126106/"
-          link2 = "https://github.com/cbanksjr"
-         />
-        <Profile 
-          name = "Craig Banks Jr"
-          occupation = "Full Stack Developer"
-          statement = "I am a developer based in Columbus, OH" 
-          />
+      <Nav/>
+        <Profile />
         <About />
-        <Projects  />
-        <Footer
-          copyright = {`Copyright ${copyright} Craig Banks Jr ${currentYear}`}   
-         />
+        <Projects />
+        <Footer />
     </div>
   );
 };
