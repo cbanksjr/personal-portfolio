@@ -1,8 +1,6 @@
-/* eslint-disable react/prop-types */
-/** @format */
 import { useState, useEffect } from "react";
 import Icons from "./Icons";
-import imageSelf from "../assets/57F76CF8-3951-412B-B7FC-1E8838E0263D_1_105_c.jpeg";
+import imageSelf from "../assets/headshot-2.jpg";
 
 const Profile = () => {
   const [myName, setName] = useState('Craig Banks Jr');
@@ -24,7 +22,7 @@ const Profile = () => {
       />
       <div className="pt-20 lg:flex flex-col items-center row-start-1 leading-normal">
         <h1 className="text-xl text-center lg:text-5xl 2xl:text-7xl font-extrabold mb-10">
-          Full Stack Developer
+          Software Developer
         </h1>
         <h2 className="xl:flex text-slate-50 font-semibold text-xl">
           <p className="text-center xl:p-6">
@@ -32,7 +30,7 @@ const Profile = () => {
             <span className="lg:text-2xl 2xl:text-3xl">{myName.substring(0, index)}</span>
             <span className="text-sm lg:text-xl 2xl:text-2xl font-normal">
               <br />
-              I am a developer based in Columbus, OH
+              I am a developer based in Dallas, TX
             </span>
           </p>
         </h2>
