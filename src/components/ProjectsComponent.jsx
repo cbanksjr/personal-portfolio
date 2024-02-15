@@ -1,7 +1,6 @@
-/* eslint-disable react/prop-types */
-/** @format */
+import PropTypes from "prop-types";
 
-const ProjectsComponent = ({ url, url2, image, name, fontAwesome, fontAwesome2, fontAwesome3 }) => {
+const ProjectsComponent = ({ url, url2, image, name, tools }) => {
   return (
     <article className="p-12 lg:p-8 flex row-start-2 place-content-center">
       <div className="bg-white border border-gray-200 rounded-lg shadow-2xl shadow-gray-600 transition ease-in-out duration-300  hover:shadow-gray-900  dark:bg-neutral-50 dark:border-gray-700">
@@ -13,7 +12,7 @@ const ProjectsComponent = ({ url, url2, image, name, fontAwesome, fontAwesome2, 
             {name}
           </h5>
           <p className="mb-3 font-normal text-gray-700 dark:text-gray-500">
-            {fontAwesome} {fontAwesome2} {fontAwesome3}
+            Tools: {tools}
           </p>
           <a
             href={url2}
@@ -44,4 +43,11 @@ const ProjectsComponent = ({ url, url2, image, name, fontAwesome, fontAwesome2, 
   );
 };
 
+ProjectsComponent.propTypes ={
+  url: PropTypes.string,
+  url2: PropTypes.string,
+  image: PropTypes.string,
+  name: PropTypes.string,
+  tools: PropTypes.string
+}
 export default ProjectsComponent;
