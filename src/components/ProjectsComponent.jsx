@@ -5,7 +5,7 @@ const ProjectsComponent = ({ url, url2, image, name, tools }) => {
     <article className="p-12 lg:p-8 flex row-start-2 place-content-center">
       <div className="bg-white border border-gray-200 rounded-lg shadow-2xl shadow-gray-600 transition ease-in-out duration-300  hover:shadow-gray-900  dark:bg-neutral-50 dark:border-gray-700">
         <a href={url} target="_blank" rel="noreferrer">
-          <img className="rounded-t-lg" src={image} alt="Calculator Project" />
+          <img className="rounded-t-lg" src={image} alt="Project Image" />
         </a>
         <div className="p-5">
           <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-black">
