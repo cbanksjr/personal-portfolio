@@ -9,7 +9,6 @@ const Nav = () => {
   const linkedIn = <FontAwesomeIcon icon={faLinkedin} size="2xl" />;
   
   return (
-   
       <nav className="lg:flex justify-end p-8">
         <ul className="flex flex-row justify-center lg:flex mt-4 text-xl">
           <li className="pr-2 lg:mr-20 cursor-pointer text-white hover:text-[#f66b00] duration-300 hover:duration-500"><a href="https://www.linkedin.com/in/craig-banks-jr-7a9126106/" target="_blank" rel="noreferrer">{linkedIn}</a></li>

@@ -1,17 +1,15 @@
 import calculator from "../assets/react-calculator.png";
 import ProjectsComponent from "./ProjectsComponent";
 
-const Calculator = () => {
-  const calculatorRepo = "https://github.com/cbanksjr/full-stack-finance-calculator";
-  const projectName = "Finance Calculator";
+const Calculator = ({calculatorRepo, projectName, calculatorImage, technologies}) => {
 
   return (
     <article className="col-start-2">
       <ProjectsComponent
         url2={calculatorRepo}
-        image={calculator}
+        image={calculatorImage}
         name={projectName}
-        tools={"React, TailwindCSS, Spring MVC, PostgreSQL"}
+        tools={technologies}
       />
     </article>
   );
